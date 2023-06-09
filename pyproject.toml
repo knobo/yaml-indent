@@ -18,3 +18,7 @@ build-backend = "poetry.core.masonry.api"
 [tool.poetry.scripts]
 yaml-indent = "yaml_indent.yaml_indent:main"
 
+[tool.poetry.urls]
+"Repository" = "https://github.com/knobo/yaml-indent"
+"Bug Tracker" = "https://github.com/knobo/yaml-indent/issues"
+"Documentation" = "https://github.com/knobo/yaml-indent/wiki"  
