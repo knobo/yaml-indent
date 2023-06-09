@@ -1,4 +1,6 @@
 # YAML Indent
+
+
 ## Overview
 
 yaml-indent is a Python utility for formatting YAML files with correct
@@ -32,7 +34,7 @@ with two arguments: the input YAML file and the output YAML file.
 Here is an example:
 
 ``` sh
-python input.yaml output.yaml
+yaml-indent input.yaml output.yaml
 ```
 
 In this command, input.yaml is the YAML file you want to format and
@@ -44,6 +46,11 @@ output.yaml already exists, it will be overwritten.
 Contributions to this project are welcome. If you find a bug or think
 of a feature that this utility could benefit from, please open an
 issue or submit a pull request.
+
+## Source Code
+
+The source code for this project is hosted on GitHub. You can access it at [https://github.com/knobo/yaml-indent](https://github.com/knobo/yaml-indent).
+
 
 ## License
 
