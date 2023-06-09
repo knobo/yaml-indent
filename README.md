@@ -1,46 +1,47 @@
 # YAML Indent
 
-
-## Overview
-
-yaml-indent is a Python utility for formatting YAML files with correct
-indentation. It reads in a YAML file, processes it, and outputs a new
-YAML file with proper indentation, making the file more readable and
-manageable.
-
-## How it Works
-
-The utility makes use of the PyYAML library to parse the input YAML
-file, and re-dumps the YAML data into the output file with correct
-indentation.
+`yaml-indent` is a Python script to re-indent YAML files according to configurable or default indentation rules. It uses the `ruamel.yaml` library for parsing and writing YAML.
 
 ## Installation
 
-To use this utility, you must have Python 3 installed on your
-system. Additionally, you need to install the PyYAML library. You can
-install it using pip:
+The script requires Python 3.
 
 ``` sh
 pip install yaml-indent
 ```
 
-You can then clone this repository to your local machine.
-
 ## Usage
 
-To use this utility, you need to run the Python script yaml_indent.py
-with two arguments: the input YAML file and the output YAML file. 
-
-Here is an example:
+You can run `yaml-indent` from the command line with the following syntax:
 
 ``` sh
-yaml-indent input.yaml output.yaml
+yaml-indent <input_file> [-o <output_file>] [-i]
 ```
 
-In this command, input.yaml is the YAML file you want to format and
-output.yaml is the file where the formatted YAML will be written. If
-output.yaml already exists, it will be overwritten.
+Where:
 
+- `<input_file>` is the path to the input YAML file to be re-indented.
+- `-o <output_file>` (optional) is the path to the output file where the indented YAML will be written.
+- `-i` (optional) if set, the input file will be edited in place.
+
+If no output file is specified and `-i` is not set, the indented YAML will be printed to the standard output.
+
+## Configuration
+
+`yaml-indent` looks for a `.yaml_indent.ini` configuration file in the
+current directory and all parent directories up to the home
+directory. The configuration file should be in the INI format and can
+specify the `mapping`, `sequence`, and `offset` indentation values
+under the `YAML` section.
+
+Here's an example:
+
+```ini
+[YAML]
+mapping=4
+sequence=4
+offset=0
+```
 ## Contributing
 
 Contributions to this project are welcome. If you find a bug or think
@@ -49,8 +50,8 @@ issue or submit a pull request.
 
 ## Source Code
 
-The source code for this project is hosted on GitHub. You can access it at [https://github.com/knobo/yaml-indent](https://github.com/knobo/yaml-indent).
-
+The source code for this project is hosted on GitHub. You can access
+it at [https://github.com/knobo/yaml-indent](https://github.com/knobo/yaml-indent).
 
 ## License
 
