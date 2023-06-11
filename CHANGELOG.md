@@ -5,6 +5,7 @@
 ### Added
 - Update documentation
 - This CHANGELOG.md file.
+- Start searching for config file starting from the yaml-files directory
 
 ## [0.1.1] - 2023-06-09
 
