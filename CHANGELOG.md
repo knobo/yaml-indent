@@ -1,8 +1,8 @@
 # Changes
 
-## [Unreleased]
+## [0.1.2] - 2023-06-11
 
-### Added
+### Changed
 - Update documentation
 - This CHANGELOG.md file.
 - Start searching for config file starting from the yaml-files directory
