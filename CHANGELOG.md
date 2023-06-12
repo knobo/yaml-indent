@@ -1,6 +1,9 @@
 # Changes
 
-## [Unreleased]
+## [0.1.4] - 2023-06-11
+- Allow multiple documents in one file
+
+## [0.1.3] - 2023-06-11
 - Fix for running outside homedir and missing config file
 - Added -v for printing version info
 
