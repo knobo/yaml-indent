@@ -10,7 +10,8 @@ from ruamel.yaml import YAML
 def find_config_file(dir_path):
     '''Finds config file for files in dir_path'''
     home_dir = os.path.expanduser("~")  # Home directory path
-    while dir_path != home_dir:  # Stop at the home directory
+    while dir_path != home_dir and dir_path != "/" and dir_path != "":  # Stop at the home directory
+        print(dir_path)
         config_path = os.path.join(dir_path, '.yaml_indent.ini')
         if os.path.exists(config_path):
             return config_path

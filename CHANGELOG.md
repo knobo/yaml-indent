@@ -1,5 +1,8 @@
 # Changes
 
+## [Unreleased]
+- Fix for running outside homedir and missing config file
+
 ## [0.1.2] - 2023-06-11
 
 ### Changed
