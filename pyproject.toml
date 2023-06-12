@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "yaml-indent"
-version = "0.1.2"
-description = ""
+version = "0.1.3"
+description = "Tool for making consistent indentation"
 authors = ["Knut Olav Bøhmer <bohmer@gmail.com>"]
 readme = "README.md"
 
