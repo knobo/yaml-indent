@@ -29,7 +29,7 @@ If no output file is specified and `-i` is not set, the indented YAML will be pr
 ## Configuration
 
 `yaml-indent` looks for a `.yaml_indent.ini` configuration file in the
-current directory and all parent directories up to the home
+the yaml files directory and all parent directories up to the home
 directory. The configuration file should be in the INI format and can
 specify the `mapping`, `sequence`, and `offset` indentation values
 under the `YAML` section.
