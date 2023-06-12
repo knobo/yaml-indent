@@ -2,6 +2,7 @@
 
 ## [Unreleased]
 - Fix for running outside homedir and missing config file
+- Added -v for printing version info
 
 ## [0.1.2] - 2023-06-11
 

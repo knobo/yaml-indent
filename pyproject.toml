@@ -10,6 +10,7 @@ python = "^3.10"
 ruamel-yaml = "^0.17.31"
 configparser = "^5.3.0"
 argparse = "^1.4.0"
+toml = "^0.10.2"
 
 [build-system]
 requires = ["poetry-core"]

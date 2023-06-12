@@ -1,11 +1,10 @@
-#!/usr/bin/env python3
 """ A program to indent yaml files """
 import argparse
 import configparser
 import os
 import sys
 from ruamel.yaml import YAML
-
+from . import __version__
 
 def find_config_file(dir_path):
     '''Finds config file for files in dir_path'''
@@ -71,6 +70,8 @@ def main():
     '''Parse arguments and indent files'''
 
     parser = argparse.ArgumentParser()
+    parser.add_argument("-v", "--version", action="version", version=__version__)
+
     parser.add_argument(
         'input_file',
         help='The input YAML file to be indented'
