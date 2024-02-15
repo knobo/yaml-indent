@@ -30,6 +30,10 @@ def find_config_file(dir_path):
             return config_path
         # Go up to the parent directory
         dir_path = os.path.dirname(dir_path)
+    # Check top-level directory, too
+    config_path = os.path.join(dir_path, '.yaml_indent.ini')
+    if os.path.exists(config_path):
+        return config_path
     return None
 
 
